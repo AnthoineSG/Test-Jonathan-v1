@@ -6,7 +6,7 @@
     font-family: "MontserratExtraLight";
     src: url(../css/static/Montserrat-ExtraLight.ttf) format("truetype");
 }
-
+/***************************TOTU*******************************************/
 html{
     --blanc:rgb(255 255 255);
     --grisClair:rgb(191 189 191);
@@ -18,12 +18,9 @@ body{
     background-color: var(--blanc);
     text-transform: uppercase;
 
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 /* *****************************HEADER************************************* */
 header{
@@ -34,60 +31,72 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.leH1{
+.header__titre{
     font-weight: bold;
     font-size: 2rem;
 }
-.menu-click{
-    padding: 0 2vh;
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
-.leGrosLa{
+.header__nav-items{
+    padding: 0 2vh;
+    text-decoration: none;
+    color: var(--gris);
+}
+.header__nav-items:hover{
+    font-size: 1.05rem;
+}
+.header__nav-items-strong{
     font-weight: bold;
 }
 /* *******************************MAIN*********************************** */
-
 main{
     /* border: 2px rgb(212, 9, 9) solid; */
     width: 110vh;
-
 }
-.lesImages{
+.main__article{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    align-items: center;
     height: 40vh;
 }
 img{
     max-width: 35vh;
 }
-.uneImage{
+.main__article-items{
     /* border: 2px rgb(243, 239, 0) solid; */
-
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    height: 39vh;
+
+    cursor:cell;
+
+    color: var(--gris);
+    text-decoration: none;
+}
+.main__article-items:hover{
+    box-shadow: 0 0 5rem 0.9rem black;
 }
 h3{
     font-size: 0.8rem;
     font-weight: bold;
+    height: 1.5vh;
+    padding-bottom: 2.5vh;
 }
 /* ********************************FOOTER********************************** */
-
 footer{
     /* border: 2px rgb(12, 207, 100) solid; */
-
     padding: 20vh 0 5vh 0;
     font-size: 0.8rem;
 }
-.imgFoot{
+.footer__logo{
     /* border: 1px black solid; */
     width: 100%;
     margin-bottom: 1vh;
@@ -95,21 +104,15 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
-
-.a123{
+.footer__logo-image{
     width: 2vh;
 }
 /***************************************TRUC*********************************/
-
-
-.truc{
+.aside__follow{
     position:fixed;
     top: 95%;
     right: 1%;
-    
-
 
     border: 1px black solid;
     font-family: sans-serif;
@@ -117,11 +120,4 @@ footer{
     text-transform: lowercase;
     padding: 0.8vh;
     border-radius: 7px;
-
-
-
 }
-
-
-
-
